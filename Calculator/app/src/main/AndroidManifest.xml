@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.numix.calculator"
-    android:versionName="2.7.0"
-    android:versionCode="10">
+    package="com.numix.calculator">
 
     <!-- Include required permissions for Google Mobile Ads to run-->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
-    <original-package android:name="com.numix.calculator" />
-    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="21"/>
-
 
     <application android:label="@string/app_name" android:icon="@mipmap/ic_launcher_calculator">
         <receiver android:name="com.numix.calculator.CalculatorWidget" >
@@ -38,7 +32,7 @@
         <activity-alias
             android:label="@string/app_name"
             android:icon="@mipmap/ic_launcher_calculator"
-            android:name=".Calculator-Dark"
+            android:name=".CalculatorDark"
             android:enabled="true"
             android:targetActivity=".Calculator">
             <intent-filter>
@@ -49,7 +43,7 @@
         <activity-alias
             android:label="@string/app_name"
             android:icon="@mipmap/ic_launcher_calculator_light"
-            android:name=".Calculator-Light"
+            android:name=".CalculatorLight"
             android:enabled="false"
             android:targetActivity=".Calculator">
             <intent-filter>
